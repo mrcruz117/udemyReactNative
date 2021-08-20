@@ -20,17 +20,15 @@ const styles = StyleSheet.create({
   textOneStyle: {
     borderWidth: 3,
     borderColor: 'red',
-    flex: 1,
   },
   textTwoStyle: {
     borderWidth: 3,
     borderColor: 'red',
-    flex: 2,
+    ...StyleSheet.absoluteFillObject,
   },
   textThreeStyle: {
     borderWidth: 3,
     borderColor: 'red',
-    flex: 3,
   },
 });
 
