@@ -10,6 +10,7 @@ npm-debug.*
 web-build/
 package-lock.json
 DS_Store
+yelp.js
 
 # macOS
 .DS_Store
