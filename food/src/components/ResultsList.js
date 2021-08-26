@@ -10,6 +10,8 @@ import { withNavigation } from 'react-navigation';
 import ResultsDetail from './ResultsDetail';
 
 const ResultsList = ({ title, results, navigation }) => {
+  if (!results.length) return null;
+
   return (
     <View style={styles.container}>
       <Text style={styles.titleStyle}>{title}</Text>
@@ -25,7 +27,7 @@ const ResultsList = ({ title, results, navigation }) => {
                 navigation.navigate('ResultsShow', { id: item.id })
               }
             >
-              <ResultsDetail result={item} />
+              <ResultsDetail style={styles.detail} result={item} />
             </TouchableOpacity>
           );
         }}
@@ -43,6 +45,9 @@ const styles = StyleSheet.create({
   },
   container: {
     marginBottom: 10,
+  },
+  detail: {
+
   },
 });
 export default withNavigation(ResultsList);
