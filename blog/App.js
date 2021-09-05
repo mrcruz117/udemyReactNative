@@ -15,3 +15,4 @@ const navigator = createStackNavigator(
 );
 
 export default createAppContainer(navigator);
+// take note of navigation screen
